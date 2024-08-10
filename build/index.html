@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTR Dairy Products</title>
+    <link rel="icon" href="images/favicon.png" type="x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-10 bg-teal-700 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">MTR Dairy Products🐄</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+          >
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="#products" class="hover:opacity-90">Our Products</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="hover:opacity-90">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full py-6 text-center hover:opacity-90"
+            >Home</a
+          >
+          <a href="#products" class="w-full py-6 text-center hover:opacity-90"
+            >Our Products</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
+            >Contact Us</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="mx-auto max-w-4xl">
+      <section
+        id="hero"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-center text-2xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-3xl"
+          >
+            Savor the purity of tradition in every drop in
+            <span class="text-indigo-700 dark:text-indigo-300"
+              >MTR Dairy Products</span
+            >
+            experience the essence of fresh, premium dairy.
+          </h2>
+          <p
+            class="mt-4 max-w-md text-center text-slate-700 dark:text-slate-400 sm:text-left"
+          >
+            We meticulously prepare our dairy products to ensure peak freshness
+            and quality. Each item is carefully tested to meet our stringent
+            standards before being delivered to you with the utmost care,
+            ensuring that every bite refelects our commitment to excellence.
+          </p>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+          >
+            Checkout MTR Dairy Products.
+          </p>
+        </article>
+        <img
+          class="sm:w-1/2 w-72 h-72 sm:h-96"
+          src="./images/products.png"
+          alt="Products"
+        />
+      </section>
+
+      <hr class="mx-auto w-11/12 bg-black dark:bg-white" />
+
+      <section
+        id="products"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-4xl"
+        >
+          Our Products
+        </h2>
+        <ul
+          class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row"
+        >
+          <li
+            class="flex w-2/3 h-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/milk.jpg" alt="Milk" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Milk
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;100/litre
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;100/litre
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 h-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/curd.jpg" alt="curd" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Curd
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;120/kg
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;120/kg
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/ghee.jpg" alt="Ghee" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Ghee
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;600/kg
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;600/kg
+            </p>
+          </li>
+        </ul>
+        <ul
+          class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row"
+        >
+          <li
+            class="flex w-2/3 h-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/cheese.jpeg" alt="Cheese" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Cheese
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;300/kg
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;300/kg
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 h-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/butter.jpg" alt="butter" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Butter
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;400/kg
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;400/kg
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/paneer.jpg" alt="paneer" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Paneer
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;600/kg
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;600/kg
+            </p>
+          </li>
+        </ul>
+        <ul
+          class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row"
+        >
+          <li
+            class="flex w-2/3 h-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/yogurt.jpg" alt="Yogurt" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Yogurt
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;100/l00g
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;100/100g
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 h-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img src="./images/lassi.jpg" alt="lassi" class="mb-6 w-11/12" />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Lassi
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;100/litre
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;100/litre
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
+          >
+            <img
+              src="./images/icecream.jpg"
+              alt="icecream"
+              class="mb-6 w-11/12"
+            />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Ice Cream
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
+            >
+              &#8377;20/pc
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              &#8377;20/pc
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="mx-auto w-11/12 bg-black dark:bg-white" />
+
+      <section
+        id="testimonials"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-4xl"
+        >
+          Testimonials
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-2xl"
+            >
+              MTR dairy products are simply the best! The milk is incredibly
+              fresh and creamy, and it's a hit with my whole family. We also
+              love the curd and yogurt—both are smooth and full of flavor. MTR
+              consistently delivers top-quality dairy that makes every meal
+              special.
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212; Suneetha M., Home Cook
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-2xl"
+            >
+              The quality of MTR's cheese and butter is outstanding. The cheese
+              adds a delightful richness to any dish, while the butter has the
+              perfect creamy texture that enhances both cooking and baking. I
+              trust MTR for the freshest and most delicious dairy products.
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212; Mahesh P., Chef
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-2xl"
+            >
+              I'm consistently impressed with the freshness of MTR's ghee and
+              paneer. The ghee adds a wonderful depth of flavor to my
+              traditional recipes, and the paneer is always fresh and perfect
+              for cooking. MTR's dairy products are a staple in my kitchen!
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212; Ruchi P., Culinary Enthusiast
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-2xl"
+            >
+              MTR's ice cream is a true indulgence! The flavors are rich and
+              creamy, and it's a favorite treat for the whole family. Plus, the
+              lassi is refreshing and delicious, making it a great complement to
+              any meal or as a refreshing drink on its own.
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212; Tirumala M., Dessert Lover
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-2xl"
+            >
+              The consistency and quality of MTR dairy products are
+              unparalleled. From the smooth yogurt to the tangy curd, everything
+              is always fresh and flavorful. MTR has become my go-to brand for
+              all things dairy!
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212; Ravi M., Health-Conscious Shopper
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr class="mx-auto w-11/12 bg-black dark:bg-white" />
+
+      <section
+        id="contact"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-4xl"
+        >
+          Contact Us
+        </h2>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            autocomplete="off"
+            placeholder="Your Subject"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-2xl"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            autocomplete="off"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-2xl"
+          ></textarea>
+          <button
+            class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-teal-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>MTR Dairy Products Pvt Ltd.</h2>
+          Madhapur<br />
+          Hyderabad, Telangana 500067<br />
+          Email:
+          <a href="mtr:inquiries@mtrdairyproducts.com"
+            >mtr@mtrdairyproducts.com</a
+          ><br />
+          Phone: <a href="tel:+91 5555555555">+91 5555 5555</a>
+        </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a href="#products" class="hover:opacity-90">Our Products</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
